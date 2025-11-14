@@ -27,3 +27,10 @@ add primary key(id);
 
 select * from employee;
 describe employee;
+
+show tables;
+
+select * from employee;
+describe employee;
+
+alter table employee modify phno varchar(20);
