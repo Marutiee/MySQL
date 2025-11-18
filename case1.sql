@@ -1,36 +1,16 @@
-create database employee;
-show databases;
-use employee;
+create database student;
+use student;
 
-create table employee(
-						id int ,
-                        fname varchar(50),
-                        lname varchar(5),
-                        hdate date,
-                        adr varchar(50),
-                        city varchar(50)
-                        );
-                        
-insert into employee(id, fname, lname, hdate, adr, city)
-values(1, 'A', 'Z', '2001-7-25', 'bgm','knp');
 
-insert into employee
-Values( 2,'B','Y','2001-8-26','bgm','knp');
-drop table employee;
 
-update employee
-set hdate='2001-1-8'
-where id=2;
+create table students(
+		id int primary key,
+        name varchar(50),
+        age int
+);
 
-alter table employee
-add primary key(id);
 
-select * from employee;
-describe employee;
-
-show tables;
-
-select * from employee;
-describe employee;
-
-alter table employee modify phno varchar(20);
+alter table students add email varchar(100);
+alter table students modify age varchar(3);
+truncate table students;
+alter table students rename to std;
