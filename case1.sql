@@ -14,3 +14,12 @@ alter table students add email varchar(100);
 alter table students modify age varchar(3);
 truncate table students;
 alter table students rename to std;
+
+describe std;
+
+show tables;
+
+#21-NOV-2025
+show databases;
+
+use students;
